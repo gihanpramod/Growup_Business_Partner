@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Grow Up Partner</title>
+    <meta name="description" content="Contact Grow Up Partner. Book your free 48-hour business analysis and start your growth journey today.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="contact-page nav-on-dark">
+
+    <nav class="navbar nav-on-dark">
+        <a href="index.html" class="logo">
+            <img src="images/Growup_logo.png" alt="Grow Up Partner Logo" class="logo-img">
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="about.html" data-i18n="nav_about">About</a></li>
+            <li><a href="programs.html" class="highlight-link" data-i18n="nav_programs">Programs</a></li>
+            <li><a href="services.html" data-i18n="nav_services">Services</a></li>
+            <li><a href="autopilot.html" data-i18n="nav_autopilot">AutoPilot</a></li>
+            <li><a href="execution.html" data-i18n="nav_execution">Execution</a></li>
+            <li><a href="case-studies.html" data-i18n="nav_cases">Case Studies</a></li>
+            <li><a href="contact.html" class="active-link" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <button id="lang-toggle" class="lang-btn"><span class="active">EN</span> / <span>TA</span></button>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu">
+        <ul class="mobile-nav-links">
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="about.html" data-i18n="nav_about">About</a></li>
+            <li><a href="programs.html" data-i18n="nav_programs">Programs</a></li>
+            <li><a href="services.html" data-i18n="nav_services">Services</a></li>
+            <li><a href="autopilot.html" data-i18n="nav_autopilot">AutoPilot</a></li>
+            <li><a href="execution.html" data-i18n="nav_execution">Execution</a></li>
+            <li><a href="case-studies.html" data-i18n="nav_cases">Case Studies</a></li>
+            <li><a href="contact.html" class="mobile-highlight" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- ─── Hero ─── -->
+    <header class="contact-hero">
+        <div class="contact-hero-image">
+            <img src="images/Contact Us.jpeg" alt="Contact Grow Up Partner">
+            <div class="contact-hero-overlay"></div>
+        </div>
+        <div class="contact-hero-content reveal-smooth">
+            <div class="contact-hero-badge">Get In Touch</div>
+            <h1 class="text-white" data-i18n="contact_title">Let's Build Your<br>Business Together.</h1>
+            <div class="accent-line bg-gold mb-4 stagger-2"></div>
+            <p class="subtitle text-light stagger-3" data-i18n="contact_desc">Ready to grow? Book your free 48-hour business analysis and discover exactly where your growth is waiting.</p>
+        </div>
+    </header>
+
+    <!-- ─── Contact Section ─── -->
+    <section class="contact-main-section">
+
+        <!-- Contact Cards (Phone & Email) -->
+        <div class="contact-cards-row reveal-smooth">
+
+            <a href="tel:+94779029696" class="contact-card-modern" id="phone-card">
+                <div class="ccm-image-wrap">
+                    <img src="images/phone.png" alt="Phone" class="ccm-img">
+                    <div class="ccm-pulse-ring"></div>
+                    <div class="ccm-pulse-ring ccm-pulse-ring-2"></div>
+                </div>
+                <div class="ccm-info">
+                    <span class="ccm-label" data-i18n="phone_label">Phone</span>
+                    <span class="ccm-value">+94 77 902 9696</span>
+                    <span class="ccm-action">Tap to Call →</span>
+                </div>
+            </a>
+
+            <a href="mailto:growuppartnerbusiness@gmail.com" class="contact-card-modern" id="email-card">
+                <div class="ccm-image-wrap">
+                    <img src="images/email.png" alt="Email" class="ccm-img">
+                    <div class="ccm-pulse-ring"></div>
+                    <div class="ccm-pulse-ring ccm-pulse-ring-2"></div>
+                </div>
+                <div class="ccm-info">
+                    <span class="ccm-label" data-i18n="email_label">Email</span>
+                    <span class="ccm-value">growuppartnerbusiness<br>@gmail.com</span>
+                    <span class="ccm-action">Tap to Email →</span>
+                </div>
+            </a>
+
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-section reveal-fold">
+            <div class="contact-form-header">
+                <h2 data-i18n="reach_out">Send Us a Message</h2>
+                <p>Fill in the form below and we'll get back to you within 24 hours.</p>
+            </div>
+            <form class="contact-form-modern" id="contact-form">
+                <div class="form-row">
+                    <div class="form-group-modern">
+                        <label data-i18n="form_name">Your Name</label>
+                        <input type="text" id="cf-name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group-modern">
+                        <label data-i18n="form_email">Your Email</label>
+                        <input type="email" id="cf-email" placeholder="your@email.com" required>
+                    </div>
+                </div>
+                <div class="form-group-modern">
+                    <label>Phone Number</label>
+                    <input type="tel" id="cf-phone" placeholder="+94 77 000 0000">
+                </div>
+                <div class="form-group-modern">
+                    <label data-i18n="form_message">Your Message</label>
+                    <textarea id="cf-message" rows="5" placeholder="Tell us about your business and what you'd like to achieve..." required></textarea>
+                </div>
+                <button type="submit" class="contact-submit-btn" id="contact-submit">
+                    <span data-i18n="form_submit">Book Your Free 48-Hour Business Analysis</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </button>
+            </form>
+        </div>
+
+    </section>
+
+    <a href="https://wa.me/94779029696" target="_blank" class="whatsapp-float">
+        <img src="images/whatsapp.png" alt="WhatsApp us" class="wa-img">
+    </a>
+
+    <footer class="footer bg-dark">
+        <img src="images/Growup_logo.png" alt="Grow Up Logo" class="footer-logo">
+        <p data-i18n="footer_copy">© 2026 Grow Up Partner (Pvt) Ltd. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

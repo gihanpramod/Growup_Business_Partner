@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growth Programs - Grow Up Partner</title>
+    <meta name="description" content="Explore GrowUp Partner's 3 structured growth programs: 48-Hour Analysis, 21 Days Training, and the 112 Days Growth & AutoPilot System.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="programs-page">
+
+    <!-- Growth Chart Background (Fixed) -->
+    <div class="growth-chart-container">
+        <div class="growth-milestone-wrapper">
+            <svg class="growth-svg" viewBox="0 0 1000 1000" preserveAspectRatio="none">
+                <path id="growth-path" class="growth-path" d="M0,1000 C300,950 400,600 500,500 C600,400 700,100 1000,0" />
+            </svg>
+            <div class="growth-milestone milestone-25" id="ms-25">+25% Growth</div>
+            <div class="growth-milestone milestone-50" id="ms-50">+50% Efficiency</div>
+            <div class="growth-milestone milestone-100" id="ms-100">+100% AutoPilot</div>
+        </div>
+    </div>
+
+    <nav class="navbar nav-on-dark">
+        <a href="index.html" class="logo">
+            <img src="images/Growup_logo.png" alt="Grow Up Partner Logo" class="logo-img">
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="about.html" data-i18n="nav_about">About</a></li>
+            <li><a href="programs.html" class="active-link highlight-link" data-i18n="nav_programs">Programs</a></li>
+            <li><a href="services.html" data-i18n="nav_services">Services</a></li>
+            <li><a href="autopilot.html" data-i18n="nav_autopilot">AutoPilot</a></li>
+            <li><a href="execution.html" data-i18n="nav_execution">Execution</a></li>
+            <li><a href="case-studies.html" data-i18n="nav_cases">Case Studies</a></li>
+            <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <button id="lang-toggle" class="lang-btn"><span class="active">EN</span> / <span>TA</span></button>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu">
+        <ul class="mobile-nav-links">
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="about.html" data-i18n="nav_about">About</a></li>
+            <li><a href="programs.html" data-i18n="nav_programs">Programs</a></li>
+            <li><a href="services.html" data-i18n="nav_services">Services</a></li>
+            <li><a href="autopilot.html" data-i18n="nav_autopilot">AutoPilot</a></li>
+            <li><a href="execution.html" data-i18n="nav_execution">Execution</a></li>
+            <li><a href="case-studies.html" data-i18n="nav_cases">Case Studies</a></li>
+            <li><a href="contact.html" class="mobile-highlight" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <header class="programs-hero">
+        <div class="programs-mesh-bg"></div>
+        <div class="programs-hero-container">
+            <div class="programs-hero-grid">
+                <div class="programs-hero-content">
+                    <h1 class="text-white" data-i18n="prog_header_title">Our Growth Programs</h1>
+                    <div class="accent-line bg-white mb-4"></div>
+                    <p class="subtitle" data-i18n="prog_header_desc">Three structured programs to diagnose, train, and transform your business — each designed to build on the last.</p>
+                </div>
+                
+                <div class="isometric-chart-scene" id="hero-3d-chart">
+                    <div class="isometric-chart-container" id="isometric-container">
+                        <!-- 5 3D Bars representing steps -->
+                        <div class="bar-isometric bar-1">
+                            <div class="bar-face bar-front"></div>
+                            <div class="bar-face bar-side"></div>
+                            <div class="bar-face bar-top"></div>
+                        </div>
+                        <div class="bar-isometric bar-2">
+                            <div class="bar-face bar-front"></div>
+                            <div class="bar-face bar-side"></div>
+                            <div class="bar-face bar-top"></div>
+                        </div>
+                        <div class="bar-isometric bar-3">
+                            <div class="bar-face bar-front"></div>
+                            <div class="bar-face bar-side"></div>
+                            <div class="bar-face bar-top"></div>
+                        </div>
+                        <div class="bar-isometric bar-4">
+                            <div class="bar-face bar-front"></div>
+                            <div class="bar-face bar-side"></div>
+                            <div class="bar-face bar-top"></div>
+                        </div>
+                        <div class="bar-isometric bar-5">
+                            <div class="bar-face bar-front"></div>
+                            <div class="bar-face bar-side"></div>
+                            <div class="bar-face bar-top"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="programs-main-content">
+        
+        <!-- Program 01: 48H Analysis -->
+        <section class="program-section" id="analysis-48h">
+            <div class="container-1200">
+                <div class="grid-2 align-center gap-long">
+                    <div class="reveal-smooth">
+                        <div class="program-badge-modern stagger-1" data-i18n="prog_badge_01">PROGRAM 01</div>
+                        <h2 class="text-primary mb-3 stagger-2" data-i18n="prog_48h_title">48-Hour Business Analysis</h2>
+                        <p class="lead-text mb-4 stagger-3" data-i18n="prog_48h_desc">Get a complete, expert-led picture of your business health in just 48 hours — targeted, specific, and immediately actionable.</p>
+                        
+                        <div class="program-card-glass mb-4 stagger-4">
+                            <h4 class="text-dark mb-3" data-i18n="prog_inc_title">What's Included:</h4>
+                            <ul class="check-list">
+                                <li><i class="check-icon">✓</i><span data-i18n="prog_inc_1">Marketing performance review</span></li>
+                                <li><i class="check-icon">✓</i><span data-i18n="prog_inc_2">Social media & digital presence audit</span></li>
+                                <li><i class="check-icon">✓</i><span data-i18n="prog_inc_3">Sales process evaluation</span></li>
+                                <li><i class="check-icon">✓</i><span data-i18n="prog_inc_7">Detailed written report delivered in 48 hrs</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="btn-group stagger-5">
+                            <a href="contact.html" class="cta-btn primary-btn" data-i18n="prog_btn_free">Get Free Analysis</a>
+                        </div>
+                    </div>
+                    <div class="program-visual-scene reveal-smooth">
+                        <div class="tilt-card">
+                            <img src="images/PROGRAM 01.jpeg" alt="48h Analysis" class="tilt-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Program 02: 21 Days Training -->
+        <section class="program-section bg-light" id="training-21d">
+            <div class="container-1200">
+                <div class="grid-2 align-center gap-long">
+                    <div class="program-visual-scene reveal-smooth">
+                        <div class="tilt-card">
+                            <img src="images/PROGRAM 02.jpeg" alt="21 Days Training" class="tilt-img">
+                        </div>
+                    </div>
+                    <div class="reveal-smooth">
+                        <div class="program-badge-modern stagger-1" data-i18n="prog_badge_02">PROGRAM 02</div>
+                        <h2 class="text-primary mb-3 stagger-2" data-i18n="prog_21d_title">21 Days Business Growth Training</h2>
+                        <p class="lead-text mb-4 stagger-3" data-i18n="prog_21d_desc">An intensive, owner-focused training program that gives you clarity, systems, and a growth playbook — in 3 focused weeks.</p>
+                        
+                        <div class="grid-3 gap-2 mb-4 stagger-4">
+                            <div class="card card-hover glass-card p-3">
+                                <div class="step-num text-small" data-i18n="prog_wk1_badge">WEEK 1</div>
+                                <h4 class="mb-1 text-small" data-i18n="prog_wk1_title">Foundation</h4>
+                            </div>
+                            <div class="card card-hover glass-card highlight-card p-3">
+                                <div class="step-num text-small" data-i18n="prog_wk2_badge">WEEK 2</div>
+                                <h4 class="mb-1 text-small" data-i18n="prog_wk2_title">Systems</h4>
+                            </div>
+                            <div class="card card-hover glass-card p-3">
+                                <div class="step-num text-small" data-i18n="prog_wk3_badge">WEEK 3</div>
+                                <h4 class="mb-1 text-small" data-i18n="prog_wk3_title">Execution</h4>
+                            </div>
+                        </div>
+
+                        <div class="btn-group stagger-5">
+                            <a href="contact.html" class="cta-btn primary-btn" data-i18n="prog_btn_book">Book the Training</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Program 03: 112 Days -->
+        <section class="program-section" id="system-112d">
+            <div class="container-1200">
+                <div class="grid-2 gap-long align-center mb-5">
+                    <div class="reveal-smooth">
+                        <div class="program-badge-modern stagger-1" data-i18n="prog_badge_03">PROGRAM 03</div>
+                        <h2 class="text-primary mb-3 stagger-2" data-i18n="prog_112d_title">112 Days Business Growth & AutoPilot System</h2>
+                        <p class="lead-text mb-4 stagger-3" data-i18n="prog_112d_desc">Our flagship transformation program — complete business restructuring, marketing launch, and AutoPilot activation.</p>
+                        
+                        <div class="phase-journey-grid stagger-4">
+                            <div class="phase-card-premium">
+                                <span class="phase-tag">Phase 1</span>
+                                <h4 data-i18n="prog_ph1_title">Diagnosis</h4>
+                            </div>
+                            <div class="phase-card-premium">
+                                <span class="phase-tag">Phase 2</span>
+                                <h4 data-i18n="prog_ph2_title">SOPs</h4>
+                            </div>
+                            <div class="phase-card-premium">
+                                <span class="phase-tag">Phase 3</span>
+                                <h4 data-i18n="prog_ph3_title">KPIs</h4>
+                            </div>
+                            <div class="phase-card-premium">
+                                <span class="phase-tag">Phase 4</span>
+                                <h4 data-i18n="prog_ph4_title">Execution</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="program-visual-scene reveal-smooth">
+                        <div class="tilt-card">
+                            <img src="images/PROGRAM 03.jpeg" alt="112 Day System" class="tilt-img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-card-glass mt-5 reveal-smooth stagger-5">
+                    <div class="grid-2 gap-long">
+                        <div>
+                            <h3 class="text-primary mb-3" data-i18n="prog_get_title">What You Get</h3>
+                            <ul class="custom-list list-bold">
+                                <li><i class="check-icon">✅</i><span data-i18n="prog_get_1">Clear business strategy</span></li>
+                                <li><i class="check-icon">✅</i><span data-i18n="prog_get_3">SOP for all operations</span></li>
+                                <li><i class="check-icon">✅</i><span data-i18n="prog_get_4">AutoPilot workflow</span></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-primary mb-3" data-i18n="prog_res_title">Results to Expect</h3>
+                            <ul class="custom-list list-bold">
+                                <li><i class="check-icon">🚀</i><span data-i18n="prog_res_1">More qualified leads</span></li>
+                                <li><i class="check-icon">🚀</i><span data-i18n="prog_res_4">Reduced owner workload</span></li>
+                                <li><i class="check-icon">🚀</i><span data-i18n="prog_res_5">Structured growth</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-5 reveal-smooth stagger-5">
+                    <a href="contact.html" class="cta-btn primary-btn large-btn" data-i18n="prog_btn_start">Start Your 112 Day Journey →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guarantee Section (Split Grid) -->
+        <section class="program-section bg-light" id="guarantee">
+            <div class="container-1200">
+                <div class="guarantee-grid">
+                    <div class="reveal-smooth">
+                        <div class="tilt-card shadow-lg">
+                            <img src="images/Our Guarantee.jpeg" alt="Our Guarantee" class="tilt-img">
+                        </div>
+                    </div>
+                    <div class="reveal-smooth">
+                        <div class="guarantee-card-premium">
+                            <div class="guarantee-icon-modern stagger-1">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                    <path class="shield-gold" d="M9 12l2 2 4-4"/>
+                                </svg>
+                            </div>
+                            <h2 class="stagger-2" data-i18n="prog_gua_title">Our Guarantee</h2>
+                            <p class="lead-text stagger-3" data-i18n="prog_gua_desc">If agreed targets are not achieved within the 112-day timeline, we offer a 100% money-back guarantee — as per signed agreement.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <a href="https://wa.me/94779029696" target="_blank" class="whatsapp-float">
+        <img src="images/whatsapp.png" alt="WhatsApp us" class="wa-img">
+    </a>
+
+    <footer class="footer bg-dark">
+        <img src="images/Growup_logo.png" alt="Grow Up Logo" class="footer-logo">
+        <p data-i18n="footer_copy">© 2026 Grow Up Partner (Pvt) Ltd. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

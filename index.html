@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grow Up Partner - Business Growth System</title>
+    <!-- Modern Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="images/Growup_logo.png" alt="Grow Up Partner Logo" class="logo-img">
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active-link" data-i18n="nav_home">Home</a></li>
+            <li><a href="about.html" data-i18n="nav_about">About</a></li>
+            <li><a href="programs.html" class="highlight-link" data-i18n="nav_programs">Programs</a></li>
+            <li><a href="services.html" data-i18n="nav_services">Services</a></li>
+            <li><a href="autopilot.html" data-i18n="nav_autopilot">AutoPilot</a></li>
+            <li><a href="execution.html" data-i18n="nav_execution">Execution</a></li>
+            <li><a href="case-studies.html" data-i18n="nav_cases">Case Studies</a></li>
+            <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <button id="lang-toggle" class="lang-btn"><span class="active">EN</span> / <span>TA</span></button>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Drawer -->
+    <div class="mobile-menu" id="mobile-menu">
+        <ul class="mobile-nav-links">
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="about.html" data-i18n="nav_about">About</a></li>
+            <li><a href="programs.html" data-i18n="nav_programs">Programs</a></li>
+            <li><a href="services.html" data-i18n="nav_services">Services</a></li>
+            <li><a href="autopilot.html" data-i18n="nav_autopilot">AutoPilot</a></li>
+            <li><a href="execution.html" data-i18n="nav_execution">Execution</a></li>
+            <li><a href="case-studies.html" data-i18n="nav_cases">Case Studies</a></li>
+            <li><a href="contact.html" class="mobile-highlight" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 data-i18n="hero_title">112 Day Business Growth & AutoPilot System</h1>
+                <h2 class="hero-subtitle" data-i18n="hero_subtitle">We don’t just do marketing.<br>We build systems that
+                    grow and run your business better.</h2>
+                <p data-i18n="hero_desc">At Grow Up Partner, we combine digital marketing, SOP systems, KPI tracking, and
+                    staff training to transform your business into a structured, scalable, and result-driven operation.</p>
+                <div class="btn-group">
+                    <a href="#analysis" class="cta-btn primary-btn" data-i18n="hero_cta1">Get 48 Hours Analysis</a>
+                    <a href="contact.html" class="cta-btn secondary-btn" data-i18n="hero_cta2">Talk To Us</a>
+                </div>
+            </div>
+            <div class="hero-video-wrapper">
+                <div class="hero-video-container">
+                    <video autoplay muted loop playsinline class="hero-video">
+                        <source src="video/home_page_video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- What We Do -->
+    <section class="content-section bg-light">
+        <div class="section-header">
+            <h2 data-i18n="what_we_do_title" class="text-primary">What We Do</h2>
+            <p class="section-subtitle" data-i18n="what_we_do_subtitle">We Build Businesses In 3 Powerful Layers</p>
+            <div class="accent-line"></div>
+        </div>
+        <div class="grid-3">
+            <div class="wwd-card">
+                <div class="wwd-bg-img" style="background-image: url('images/Growth Marketing.jpeg');"></div>
+                <div class="wwd-bg-overlay"></div>
+                <div class="wwd-glass-lens"></div>
+                <div class="wwd-content">
+                    <h3 data-i18n="wwd_layer1_title">1. Growth Marketing</h3>
+                    <div class="wwd-desc">
+                        <div class="wwd-desc-inner">
+                            <p data-i18n="wwd_layer1_desc">Increase visibility, generate leads, and boost conversions through strategic digital marketing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wwd-card">
+                <div class="wwd-bg-img" style="background-image: url('images/Business Systems.jpeg');"></div>
+                <div class="wwd-bg-overlay"></div>
+                <div class="wwd-glass-lens"></div>
+                <div class="wwd-content">
+                    <h3 data-i18n="wwd_layer2_title">2. Business Systems</h3>
+                    <div class="wwd-desc">
+                        <div class="wwd-desc-inner">
+                            <p data-i18n="wwd_layer2_desc">Create SOPs and AutoPilot processes to make your business run smoothly without constant owner involvement.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wwd-card">
+                <div class="wwd-bg-img" style="background-image: url('images/Performance Control.jpeg');"></div>
+                <div class="wwd-bg-overlay"></div>
+                <div class="wwd-glass-lens"></div>
+                <div class="wwd-content">
+                    <h3 data-i18n="wwd_layer3_title">3. Performance Control</h3>
+                    <div class="wwd-desc">
+                        <div class="wwd-desc-inner">
+                            <p data-i18n="wwd_layer3_desc">Track your business growth using KPI systems and structured reporting.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Core Services Outline -->
+    <section class="horizontal-section-wrapper" id="core-services-wrapper">
+        <div class="horizontal-sticky-container">
+            <div class="sticky-header-content">
+                <div class="section-header">
+                    <h2 data-i18n="core_services_title" class="text-primary">Our Core Services</h2>
+                    <div class="accent-line"></div>
+                </div>
+            </div>
+
+            <div class="horizontal-track-container" id="core-services-track-container">
+                <div class="horizontal-track" id="core-services-track">
+                    
+                    <div class="service-card-3d">
+                        <div class="card-3d-inner" style="background-image: url('images/Home_48%20Hours%20Business%20Analysis.jpeg');">
+                            <div class="card-overlay"></div>
+                            <div class="card-content">
+                                <span class="service-number">01</span>
+                                <h3 data-i18n="srv_48hrs">48 Hours Business Analysis</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-card-3d">
+                        <div class="card-3d-inner" style="background-image: url('images/Home_Growth%20Marketing%20Services.jpeg');">
+                            <div class="card-overlay"></div>
+                            <div class="card-content">
+                                <span class="service-number">02</span>
+                                <h3 data-i18n="srv_growth_mkt">Growth Marketing Services</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-card-3d">
+                        <div class="card-3d-inner" style="background-image: url('images/Home_SOP%20Development.jpeg');">
+                            <div class="card-overlay"></div>
+                            <div class="card-content">
+                                <span class="service-number">03</span>
+                                <h3 data-i18n="srv_sop">SOP Development</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-card-3d">
+                        <div class="card-3d-inner" style="background-image: url('images/Home_AutoPilot%20Mode%20Implementation.jpeg');">
+                            <div class="card-overlay"></div>
+                            <div class="card-content">
+                                <span class="service-number">04</span>
+                                <h3 data-i18n="srv_autopilot">AutoPilot Mode Implementation</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-card-3d">
+                        <div class="card-3d-inner" style="background-image: url('images/Home_KPI%20Monitoring%20System.jpeg');">
+                            <div class="card-overlay"></div>
+                            <div class="card-content">
+                                <span class="service-number">05</span>
+                                <h3 data-i18n="srv_kpi">KPI Monitoring System</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-card-3d">
+                        <div class="card-3d-inner" style="background-image: url('images/Home_Staff%20Training.jpeg');">
+                            <div class="card-overlay"></div>
+                            <div class="card-content">
+                                <span class="service-number">06</span>
+                                <h3 data-i18n="srv_staff">Staff Training</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-card-3d">
+                        <div class="card-3d-inner" style="background-image: url('images/Home_21%20Days%20Business%20Growth%20Program.jpeg');">
+                            <div class="card-overlay"></div>
+                            <div class="card-content">
+                                <span class="service-number">07</span>
+                                <h3 data-i18n="srv_21days">21 Days Business Growth Program</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-card-3d">
+                        <div class="card-3d-inner highlight-border" style="background-image: url('images/Home_112%20Day%20Full%20Growth%20System.jpeg');">
+                            <div class="card-overlay highlight-bg"></div>
+                            <div class="card-content">
+                                <span class="service-number highlight">08</span>
+                                <h3 data-i18n="srv_112days">112 Day Full Growth System</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="sticky-bottom-action text-center">
+                <a href="services.html" class="outline-btn" data-i18n="view_all_services">View All Service Details</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose-section">
+        <div class="why-bg-image" style="background-image: url('images/Home_Why Choose Us.jpeg');"></div>
+        <div class="why-bg-overlay"></div>
+        
+        <div class="why-container">
+            <div class="section-header text-white animate-on-scroll">
+                <h2 data-i18n="why_choose_title">Why Choose Us</h2>
+                <div class="accent-line bg-white"></div>
+            </div>
+            
+            <div class="why-3d-grid">
+                <div class="why-3d-card">
+                    <div class="why-card-inner">
+                        <div class="check-icon-3d">✓</div>
+                        <span data-i18n="why1">Marketing + System + Strategy in one solution</span>
+                    </div>
+                </div>
+                <div class="why-3d-card">
+                    <div class="why-card-inner">
+                        <div class="check-icon-3d">✓</div>
+                        <span data-i18n="why2">Results-focused execution</span>
+                    </div>
+                </div>
+                <div class="why-3d-card">
+                    <div class="why-card-inner">
+                        <div class="check-icon-3d">✓</div>
+                        <span data-i18n="why3">Structured business growth approach</span>
+                    </div>
+                </div>
+                <div class="why-3d-card">
+                    <div class="why-card-inner">
+                        <div class="check-icon-3d">✓</div>
+                        <span data-i18n="why4">Reduce owner dependency</span>
+                    </div>
+                </div>
+                <div class="why-3d-card">
+                    <div class="why-card-inner">
+                        <div class="check-icon-3d">✓</div>
+                        <span data-i18n="why5">KPI-based measurable performance</span>
+                    </div>
+                </div>
+                <div class="why-3d-card">
+                    <div class="why-card-inner">
+                        <div class="check-icon-3d">✓</div>
+                        <span data-i18n="why6">Staff training included</span>
+                    </div>
+                </div>
+                <div class="why-3d-card">
+                    <div class="why-card-inner">
+                        <div class="check-icon-3d">✓</div>
+                        <span data-i18n="why7">112-day transformation model</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="content-section hiw-section" id="how-it-works-section">
+        <div class="hiw-bg-image" style="background-image: url('images/Home_How%20It%20Works.jpeg');"></div>
+        <div class="hiw-bg-overlay"></div>
+        
+        <div class="hiw-container">
+            <div class="section-header">
+                <h2 data-i18n="hiw_title" class="text-white">How It Works</h2>
+                <div class="accent-line bg-white"></div>
+            </div>
+            
+            <div class="modern-timeline" id="hiw-timeline">
+                <!-- The central track line that holds the glow -->
+                <div class="timeline-track">
+                    <div class="timeline-beam" id="hiw-beam"></div>
+                </div>
+
+                <!-- Steps -->
+                <div class="timeline-step step-left">
+                    <div class="timeline-node"></div>
+                    <div class="timeline-content timeline-card">
+                        <div class="step-num">Step 1</div>
+                        <h4 data-i18n="hiw_step1">48 Hours Business Analysis</h4>
+                    </div>
+                </div>
+
+                <div class="timeline-step step-right">
+                    <div class="timeline-node"></div>
+                    <div class="timeline-content timeline-card">
+                        <div class="step-num">Step 2</div>
+                        <h4 data-i18n="hiw_step2">Strategy & Growth Plan</h4>
+                    </div>
+                </div>
+
+                <div class="timeline-step step-left">
+                    <div class="timeline-node"></div>
+                    <div class="timeline-content timeline-card">
+                        <div class="step-num">Step 3</div>
+                        <h4 data-i18n="hiw_step3">Implementation (Marketing + SOP + KPI + Training)</h4>
+                    </div>
+                </div>
+
+                <div class="timeline-step step-right">
+                    <div class="timeline-node"></div>
+                    <div class="timeline-content timeline-card">
+                        <div class="step-num">Step 4</div>
+                        <h4 data-i18n="hiw_step4">AutoPilot Business System</h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta text-center" id="analysis">
+        <div class="cta-container">
+            <h2 data-i18n="final_cta_title">Your Business Can Grow Faster — With the Right System</h2>
+            <p data-i18n="final_cta_desc">Start your journey today with our 48-hour business analysis.</p>
+            <a href="tel:+94779029696" class="modern-call-btn">
+                <img src="images/phone.png" alt="Phone" class="call-icon-animated">
+                <span data-i18n="phone_number">+94 77 902 9696</span>
+            </a>
+            <p class="brand-line mt-3" data-i18n="brand_line">We don’t just grow your business.<br>We build systems that
+                keep it growing.</p>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/94779029696" target="_blank" class="whatsapp-float">
+        <img src="images/whatsapp.png" alt="WhatsApp us" class="wa-img">
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark">
+        <img src="images/Growup_logo.png" alt="Grow Up Logo" class="footer-logo">
+        <p data-i18n="footer_copy">&copy; 2026 Grow Up Partner (Pvt) Ltd. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

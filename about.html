@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Grow Up Partner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar nav-on-dark">
+        <a href="index.html" class="logo">
+            <img src="images/Growup_logo.png" alt="Grow Up Partner Logo" class="logo-img">
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="about.html" class="active-link" data-i18n="nav_about">About</a></li>
+            <li><a href="programs.html" class="highlight-link" data-i18n="nav_programs">Programs</a></li>
+            <li><a href="services.html" data-i18n="nav_services">Services</a></li>
+            <li><a href="autopilot.html" data-i18n="nav_autopilot">AutoPilot</a></li>
+            <li><a href="execution.html" data-i18n="nav_execution">Execution</a></li>
+            <li><a href="case-studies.html" data-i18n="nav_cases">Case Studies</a></li>
+            <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <button id="lang-toggle" class="lang-btn"><span class="active">EN</span> / <span>TA</span></button>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Drawer -->
+    <div class="mobile-menu" id="mobile-menu">
+        <ul class="mobile-nav-links">
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="about.html" data-i18n="nav_about">About</a></li>
+            <li><a href="programs.html" data-i18n="nav_programs">Programs</a></li>
+            <li><a href="services.html" data-i18n="nav_services">Services</a></li>
+            <li><a href="autopilot.html" data-i18n="nav_autopilot">AutoPilot</a></li>
+            <li><a href="execution.html" data-i18n="nav_execution">Execution</a></li>
+            <li><a href="case-studies.html" data-i18n="nav_cases">Case Studies</a></li>
+            <li><a href="contact.html" class="mobile-highlight" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <header class="about-hero">
+        <div class="about-mesh-bg"></div>
+        <div class="about-hero-container">
+            <div class="about-hero-grid">
+                <div class="about-hero-text">
+                    <h1 data-i18n="about_title" class="text-white">Who We Are</h1>
+                    <div class="accent-line bg-white mb-4"></div>
+                    <p class="lead-text text-white mb-3" data-i18n="about_desc">Grow Up Partner (Pvt) Ltd is a results-driven business growth and digital transformation company.</p>
+                    <p class="text-light" data-i18n="about_desc2">We help business owners not only market their business but also build systems that allow their business to grow, scale, and operate efficiently.</p>
+                </div>
+                <div class="about-hero-visual">
+                    <div class="about-logo-3d-scene" id="about-logo-scene">
+                        <div class="about-logo-card">
+                            <img src="images/Growup_logo.png" alt="Grow Up Partner Logo" class="about-hero-logo">
+                        </div>
+                        <!-- Floating 3D elements for depth -->
+                        <div class="floating-orbit orbit-1"></div>
+                        <div class="floating-orbit orbit-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Our Mission -->
+    <section class="about-split-section">
+        <div class="about-split-container">
+            <div class="about-split-grid">
+                <div class="about-split-img-wrapper">
+                    <img src="images/Our Mission.jpeg" alt="Our Mission" class="about-split-img">
+                </div>
+                <div class="about-split-content">
+                    <h2 data-i18n="about_mission_title">Our Mission</h2>
+                    <p data-i18n="about_mission_desc">To help businesses grow through structured systems, smart marketing, and measurable performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What Makes Us Different -->
+    <section class="about-split-section reverse">
+        <div class="about-split-container">
+            <div class="about-split-grid">
+                <div class="about-split-img-wrapper">
+                    <img src="images/What Makes Us Different.jpeg" alt="What Makes Us Different" class="about-split-img">
+                </div>
+                <div class="about-split-content">
+                    <h2 data-i18n="about_diff_title">What Makes Us Different</h2>
+                    <p data-i18n="about_diff_desc">Most agencies only handle marketing. We handle your business growth as a system.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section bg-light">
+        <div class="section-header">
+            <h2 data-i18n="about_approach_title" class="text-primary">Our Approach</h2>
+            <p class="section-subtitle" data-i18n="about_approach_subtitle">We focus on:</p>
+            <div class="accent-line"></div>
+        </div>
+        <div class="approach-journey-wrapper">
+            <div class="approach-journey-line"></div>
+            
+            <div class="approach-step-item">
+                <div class="approach-step-marker"></div>
+                <div class="approach-step-card">
+                    <div class="approach-step-num">01</div>
+                    <div class="approach-step-content">
+                        <p data-i18n="app1">Understanding your business deeply</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="approach-step-item">
+                <div class="approach-step-marker"></div>
+                <div class="approach-step-card">
+                    <div class="approach-step-num">02</div>
+                    <div class="approach-step-content">
+                        <p data-i18n="app2">Building customized growth strategies</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="approach-step-item">
+                <div class="approach-step-marker"></div>
+                <div class="approach-step-card">
+                    <div class="approach-step-num">03</div>
+                    <div class="approach-step-content">
+                        <p data-i18n="app3">Implementing SOP and AutoPilot systems</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="approach-step-item">
+                <div class="approach-step-marker"></div>
+                <div class="approach-step-card">
+                    <div class="approach-step-num">04</div>
+                    <div class="approach-step-content">
+                        <p data-i18n="app4">Training your staff</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="approach-step-item">
+                <div class="approach-step-marker"></div>
+                <div class="approach-step-card">
+                    <div class="approach-step-num">05</div>
+                    <div class="approach-step-content">
+                        <p data-i18n="app5">Tracking results through KPI</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <a href="https://wa.me/94779029696" target="_blank" class="whatsapp-float">
+        <img src="images/whatsapp.png" alt="WhatsApp us" class="wa-img">
+    </a>
+
+    <footer class="footer bg-dark">
+        <img src="images/Growup_logo.png" alt="Grow Up Logo" class="footer-logo">
+        <p data-i18n="footer_copy">&copy; 2026 Grow Up Partner (Pvt) Ltd. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

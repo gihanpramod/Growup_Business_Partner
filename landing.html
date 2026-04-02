@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free 48-Hour Business Analysis - Grow Up Partner</title>
+    <meta name="description" content="Get a free 48-hour business analysis from GrowUp Partner. Discover exactly what's holding your growth back — no commitment required.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Landing Page Overrides */
+        body { background: linear-gradient(135deg, #0f172a 0%, #004aad 60%, #1e3a8a 100%); min-height: 100vh; }
+        .landing-wrap { max-width: 960px; margin: 0 auto; padding: 4rem 5% 6rem; }
+        .landing-logo { height: 100px; width: auto; display: block; margin: 0 auto 2rem; filter: brightness(0) invert(1); }
+        .landing-hero { text-align: center; margin-bottom: 4rem; }
+        .landing-hero h1 { font-size: 2.8rem; color: #fff; font-weight: 800; line-height: 1.2; margin-bottom: 1.5rem; }
+        .landing-hero h1 span { color: #60a5fa; }
+        .landing-hero p { font-size: 1.2rem; color: rgba(255,255,255,0.85); max-width: 650px; margin: 0 auto 2rem; }
+        .landing-main { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
+        .landing-form { background: rgba(255,255,255,0.95); border-radius: 20px; padding: 2.5rem; box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
+        .landing-form h2 { font-size: 1.5rem; color: var(--text-dark); margin-bottom: 0.5rem; }
+        .landing-form p { color: var(--text-muted); margin-bottom: 1.5rem; font-size: 0.95rem; }
+        .landing-form .form-group label { color: var(--text-dark); font-weight: 600; font-size: 0.9rem; margin-bottom: 0.4rem; display: block; }
+        .landing-form input, .landing-form select { width: 100%; padding: 0.9rem 1rem; border: 1.5px solid #cbd5e1; border-radius: 10px; font-family: inherit; font-size: 1rem; margin-bottom: 1rem; transition: border-color 0.3s; outline: none; }
+        .landing-form input:focus, .landing-form select:focus { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(0,74,173,0.1); }
+        .landing-form .submit-cta { width: 100%; padding: 1.1rem; background: linear-gradient(135deg, var(--primary), var(--secondary)); color: #fff; font-size: 1.05rem; font-weight: 700; border: none; border-radius: 12px; cursor: pointer; transition: all 0.3s; }
+        .landing-form .submit-cta:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,74,173,0.4); }
+        .landing-trust { margin-top: 1.2rem; }
+        .trust-item { display: flex; align-items: center; gap: 0.5rem; color: rgba(255,255,255,0.8); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .landing-benefits { color: #fff; }
+        .landing-benefits h3 { font-size: 1.4rem; color: #fff; margin-bottom: 1.5rem; }
+        .benefit-item { display: flex; gap: 1rem; margin-bottom: 1.5rem; align-items: flex-start; }
+        .benefit-icon { font-size: 2rem; flex-shrink: 0; }
+        .benefit-text h4 { color: #fff; margin-bottom: 0.3rem; }
+        .benefit-text p { color: rgba(255,255,255,0.75); font-size: 0.95rem; line-height: 1.5; }
+        .wa-cta { display: flex; align-items: center; gap: 0.8rem; background: #25D366; color: #fff; padding: 1rem 1.5rem; border-radius: 14px; text-decoration: none; margin-top: 2rem; font-weight: 700; font-size: 1rem; transition: all 0.3s; }
+        .wa-cta:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(37,211,102,0.4); }
+        .wa-cta-icon { font-size: 1.5rem; }
+        .landing-footer { text-align: center; color: rgba(255,255,255,0.4); font-size: 0.85rem; margin-top: 4rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); }
+        @media (max-width: 768px) {
+            .landing-main { grid-template-columns: 1fr; }
+            .landing-hero h1 { font-size: 1.9rem; }
+            .landing-benefits { order: -1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="landing-wrap">
+
+        <img src="images/Growup_logo.png" alt="Grow Up Partner" class="landing-logo">
+
+        <div class="landing-hero">
+            <h1>Is Your Business Working <span>For You</span> — Or Are You Working For Your Business?</h1>
+            <p>Get a FREE 48-Hour Business Analysis and discover exactly what's holding your growth back. No obligation. No sales pitch. Just clarity.</p>
+        </div>
+
+        <div class="landing-main">
+            <!-- Form -->
+            <div class="landing-form">
+                <h2>Get Your Free Analysis</h2>
+                <p>Fill in your details — we'll reach out within a few hours.</p>
+                <form>
+                    <div class="form-group">
+                        <label for="lp-name">Your Full Name</label>
+                        <input type="text" id="lp-name" placeholder="e.g. Amir Hussain" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lp-phone">Phone Number (WhatsApp)</label>
+                        <input type="tel" id="lp-phone" placeholder="+94 77 XXX XXXX" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lp-business">Type of Business</label>
+                        <select id="lp-business">
+                            <option value="">— Select your industry —</option>
+                            <option>Restaurant / Food & Beverage</option>
+                            <option>Retail / Fashion</option>
+                            <option>Education / Training</option>
+                            <option>Health & Beauty</option>
+                            <option>Real Estate</option>
+                            <option>Professional Services</option>
+                            <option>Manufacturing / Production</option>
+                            <option>E-Commerce</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="submit-cta">✅ Yes! Analyze My Business for FREE →</button>
+                </form>
+                <div class="landing-trust" style="border-top:1px solid #e2e8f0; padding-top:1rem; margin-top:1rem;">
+                    <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+                        <span style="font-size:0.8rem;color:#64748b;">✓ No commitment</span>
+                        <span style="font-size:0.8rem;color:#64748b;">✓ Results in 48 hours</span>
+                        <span style="font-size:0.8rem;color:#64748b;">✓ 100% confidential</span>
+                        <span style="font-size:0.8rem;color:#64748b;">✓ Expert analysis only</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Benefits -->
+            <div class="landing-benefits">
+                <h3>What You'll Get in 48 Hours:</h3>
+                <div class="benefit-item">
+                    <div class="benefit-icon">📊</div>
+                    <div class="benefit-text">
+                        <h4>Full Marketing Audit</h4>
+                        <p>A clear assessment of your current marketing effectiveness — what's working, what's wasting money, and what's missing entirely.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">🎯</div>
+                    <div class="benefit-text">
+                        <h4>Growth Opportunity Map</h4>
+                        <p>Specific, actionable opportunities identified for your business — not generic advice, but insights tailored to your exact situation.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">⚙️</div>
+                    <div class="benefit-text">
+                        <h4>System Gap Analysis</h4>
+                        <p>Where your business systems are breaking down — and exactly what needs to be fixed to create predictable, scalable growth.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">🗺️</div>
+                    <div class="benefit-text">
+                        <h4>Clear Action Roadmap</h4>
+                        <p>A prioritized list of steps to take immediately — so you leave with clarity, not just information.</p>
+                    </div>
+                </div>
+                <a href="https://wa.me/94779029696?text=Hi%20GrowUp%21%20I%20want%20to%20book%20my%20free%2048-hour%20business%20analysis." target="_blank" class="wa-cta">
+                    <span class="wa-cta-icon">💬</span>
+                    Or Message Us on WhatsApp Now
+                </a>
+            </div>
+        </div>
+
+        <div class="landing-footer">
+            <p>© 2026 Grow Up Partner (Pvt) Ltd. All Rights Reserved. | <a href="index.html" style="color:rgba(255,255,255,0.4);">Back to Main Website</a></p>
+        </div>
+    </div>
+</body>
+</html>
