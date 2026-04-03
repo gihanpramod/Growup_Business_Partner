@@ -175,7 +175,7 @@ document.addEventListener('DOMContentLoaded', () => {
             form_message: "Message",
             form_submit: "Book Your 48-Hour Business Analysis Now",
 
-            footer_copy: "© 2026 Grow Up Partner (Pvt) Ltd. All Rights Reserved.",
+            footer_copy: "© 2026 Grow Up Business Partner (Pvt) Ltd. All Rights Reserved.",
 
             // Programs Page
             prog_header_title: "Our Growth Programs", prog_header_desc: "Three structured programs to diagnose, train, and transform your business — each designed to build on the last.",
@@ -284,7 +284,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             contact_title: "தொடர்பு கொள்க", contact_desc: "உங்கள் வணிகத்தை சரியாக கட்டமைப்போம்.", reach_out: "எங்களை தொடர்பு கொள்ள", phone_label: "தொலைபேசி:", email_label: "மின்னஞ்சல்:",
             form_name: "பெயர்", form_email: "மின்னஞ்சல்", form_message: "செய்தி", form_submit: "48 மணிநேர பகுப்பாய்வை பதிவு செய்யவும்",
-            footer_copy: "© 2026 Grow Up Partner (Pvt) Ltd. அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.",
+            footer_copy: "© 2026 Grow Up Business Partner (Pvt) Ltd. அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.",
 
             // Programs Page (Tamil)
             prog_header_title: "எங்கள் வளர்ச்சி திட்டங்கள்", prog_header_desc: "உங்கள் வணிகத்தை பகுப்பாய்வு செய்யவும், பயிற்றுவிக்கவும் மற்றும் மாற்றவும் 3 கட்டமைக்கப்பட்ட திட்டங்கள்.",
@@ -844,21 +844,48 @@ if (document.body.classList.contains('services-page')) {
             }, { passive: true });
         }
 
-        // Form submission feedback
+        // Form submission feedback & WhatsApp Redirection
         const contactForm = document.getElementById('contact-form');
         const submitBtn   = document.getElementById('contact-submit');
         if (contactForm && submitBtn) {
             contactForm.addEventListener('submit', (e) => {
                 e.preventDefault();
+
+                // Get form values
+                const name    = document.getElementById('cf-name').value;
+                const email   = document.getElementById('cf-email').value;
+                const phone   = document.getElementById('cf-phone').value || 'Not provided';
+                const message = document.getElementById('cf-message').value;
+
+                // Build WhatsApp message
+                const waMessage = `Business Inquiry:\n*Name:* ${name}\n*Email:* ${email}\n*Phone:* ${phone}\n*Message:* ${message}`;
+                const waUrl = `https://wa.me/94779029696?text=${encodeURIComponent(waMessage)}`;
+
+                // UI Feedback
                 submitBtn.disabled = true;
+                const originalBtnContent = submitBtn.innerHTML;
+
                 submitBtn.innerHTML = `
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
                         <polyline points="22 4 12 14.01 9 11.01"/>
                     </svg>
-                    <span>Message Sent! We'll be in touch soon.</span>
+                    <span>Message Ready! Opening WhatsApp...</span>
                 `;
                 submitBtn.style.background = 'linear-gradient(135deg,#16a34a,#22c55e)';
+
+                // Open WhatsApp after a short delay to allow the user to see the success state
+                setTimeout(() => {
+                    window.open(waUrl, '_blank');
+                    
+                    // Reset form and button after a bit more time
+                    setTimeout(() => {
+                        contactForm.reset();
+                        submitBtn.disabled = false;
+                        submitBtn.innerHTML = originalBtnContent;
+                        submitBtn.style.background = '';
+                    }, 2000);
+                }, 1200);
             });
         }
 
